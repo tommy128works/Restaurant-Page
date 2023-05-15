@@ -14,5 +14,6 @@ document.body.appendChild(element);
 
 const content = document.getElementById("content");
 
-console.log("Hello world!");
 content.appendChild(homePage());
+
+console.log("Hello world!");
