@@ -1,9 +1,37 @@
-const path = require('path');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: './src/index.js',
+  mode: "development",
+  entry: {
+    index: "./src/index.js",
+    homePage: "./src/homePage.js",
+    shopPage: "./src/shopPage.js",
+    contactPage: "./src/contactPage.js",
+  },
+  devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Restaurant Page",
+    }),
+  ],
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
+  },
+  optimization: {
+    runtimeChunk: "single",
+  },
+  module: {
+    rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+    ],
   },
 };
