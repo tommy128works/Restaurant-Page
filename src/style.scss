@@ -1,4 +1,18 @@
+// * {
+//     border: 2px solid red;
+// }
+
 .center {
   display: flex;
   justify-content: center;
+}
+
+.left {
+    display: flex;
+    justify-content: left;
+}
+
+.wood {
+    border: 2px solid blue;
+    background-color: brown;
 }
