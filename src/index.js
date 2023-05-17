@@ -14,6 +14,7 @@ element.setAttribute("id", "content");
 document.body.appendChild(element);
 
 const content = document.getElementById("content");
-content.appendChild(homePage());
+// content.appendChild(homePage());
+content.appendChild(shopPage());
 
 console.log("Hello world!");

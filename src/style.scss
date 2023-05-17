@@ -21,6 +21,13 @@ body {
   background-color: #e5ba73;
   margin-top: 5vh;
   margin-bottom: 5vh;
+
+  img {
+    width: 20vw;
+    height: auto;
+    margin-top: 1vh;
+    border: 2px solid black;
+  }
 }
 
 .title {
