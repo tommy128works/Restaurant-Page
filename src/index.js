@@ -2,6 +2,7 @@ import "./style.scss";
 import homePage from "./homePage";
 import shopPage from "./shopPage";
 import contactPage from "./contactPage";
+import Icon from "./backgroundImage.jpg"
 
 // function erase content div
 
@@ -13,7 +14,6 @@ element.setAttribute("id", "content");
 document.body.appendChild(element);
 
 const content = document.getElementById("content");
-
 content.appendChild(homePage());
 
 console.log("Hello world!");
