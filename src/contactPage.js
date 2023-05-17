@@ -11,7 +11,7 @@ const contactPage = () => {
   // contact 1
   div = document.createElement("div");
   div.classList.add("wood", "info", "align");
-  
+
   let p = document.createElement("div");
   p.textContent = "Mr. Oak";
   p.classList.add("heading");
@@ -34,7 +34,7 @@ const contactPage = () => {
   // contact 2
   div = document.createElement("div");
   div.classList.add("wood", "info", "align");
-  
+
   p = document.createElement("div");
   p.textContent = "Mrs. Palm";
   p.classList.add("heading");
@@ -57,7 +57,7 @@ const contactPage = () => {
   // contact 3
   div = document.createElement("div");
   div.classList.add("wood", "info", "align");
-  
+
   p = document.createElement("div");
   p.textContent = "Mr. Pine";
   p.classList.add("heading");

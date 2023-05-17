@@ -2,20 +2,57 @@ import "./style.scss";
 import homePage from "./homePage";
 import shopPage from "./shopPage";
 import contactPage from "./contactPage";
-import Icon from "./backgroundImage.jpg"
 
-// function erase content div
+// create header tabs
+let div = document.createElement("div");
+div.classList.add("header");
 
-// tab-switching featureaddEventListener click onto button
-// delete contents and add new contents
+let button = document.createElement("button");
+button.textContent = "Home";
+button.setAttribute("id", "home-btn");
+div.appendChild(button);
 
-const element = document.createElement("div");
-element.setAttribute("id", "content");
-document.body.appendChild(element);
+button = document.createElement("button");
+button.textContent = "Shop";
+button.setAttribute("id", "shop-btn");
+div.appendChild(button);
 
+button = document.createElement("button");
+button.textContent = "Contact";
+button.setAttribute("id", "contact-btn");
+div.appendChild(button);
+
+document.body.appendChild(div);
+
+
+div = document.createElement("div");
+div.setAttribute("id", "content");
+document.body.appendChild(div);
 const content = document.getElementById("content");
-// content.appendChild(homePage());
-// content.appendChild(shopPage());
-content.appendChild(contactPage());
+content.appendChild(homePage());
 
-console.log("Hello world!");
+const delContent = () => {
+    while(content.firstChild){
+        content.removeChild(content.firstChild);
+    }
+}
+
+const homeBtn = document.getElementById("home-btn");
+homeBtn.addEventListener("click", () => {
+    delContent();
+    content.appendChild(homePage());
+});
+
+const shopBtn = document.getElementById("shop-btn");
+shopBtn.addEventListener("click", () => {
+    delContent();
+    content.appendChild(shopPage());
+});
+
+const contactBtn = document.getElementById("contact-btn");
+contactBtn.addEventListener("click", () => {
+    delContent();
+    content.appendChild(contactPage());
+});
+
+

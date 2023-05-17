@@ -15,7 +15,7 @@ const shopPage = () => {
   // Installation fee
   div = document.createElement("div");
   div.classList.add("wood", "info", "align");
-  
+
   let p = document.createElement("div");
   p.textContent = "Optional Installation Service";
   p.classList.add("heading");

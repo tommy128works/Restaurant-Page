@@ -14,7 +14,7 @@ const homePage = () => {
 
   let p = document.createElement("div");
   p.textContent =
-  "The Cabin has the highest quality tree saplings! The Cabin's tree installation service was fast and easy! The staff provided amazing customer service. They were willing to answer any questions or concerns that I had.";
+    "The Cabin has the highest quality tree saplings! The Cabin's tree installation service was fast and easy! The staff provided amazing customer service. They were willing to answer any questions or concerns that I had.";
   div.appendChild(p);
 
   p = document.createElement("div");
@@ -27,7 +27,7 @@ const homePage = () => {
   // hours
   div = document.createElement("div");
   div.classList.add("wood", "info", "align");
-  
+
   p = document.createElement("div");
   p.textContent = "Hours";
   p.classList.add("heading");

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: url('./backgroundImage.jpg');
+  background: url("./backgroundImage.jpg");
 }
 
 .align {
@@ -41,4 +41,19 @@ body {
   font-size: 4vh;
   font-weight: bold;
   margin: 1vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 1vh;
+}
+
+button {
+  width: 10vw;
+  height: 5vh;
+  font-size: 2vh;
+  font-weight: bold;
+  color: green;
 }

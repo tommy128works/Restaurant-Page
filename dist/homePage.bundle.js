@@ -13,43 +13,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 const homePage = () => {
   const element = document.createElement("div");
+  element.classList.add("align");
 
   // shop title
   let div = document.createElement("div");
   div.textContent = "The Cabin";
-  div.classList.add("center");
+  div.classList.add("wood", "title");
   element.appendChild(div);
 
   // customer review
   div = document.createElement("div");
-  div.textContent =
-    "The Cabin has the highest quality tree saplings! The Cabin's tree installation service was fast and easy!";
-  element.appendChild(div);
+  div.classList.add("wood", "info", "align");
 
-  div = document.createElement("div");
-  div.textContent = "Tom";
+  let p = document.createElement("div");
+  p.textContent =
+    "The Cabin has the highest quality tree saplings! The Cabin's tree installation service was fast and easy! The staff provided amazing customer service. They were willing to answer any questions or concerns that I had.";
+  div.appendChild(p);
+
+  p = document.createElement("div");
+  p.textContent = "Mandelorian";
+  p.classList.add("heading");
+  div.appendChild(p);
+
   element.appendChild(div);
 
   // hours
   div = document.createElement("div");
-  div.textContent = "Hours";
-  element.appendChild(div);
+  div.classList.add("wood", "info", "align");
 
-  div = document.createElement("div");
-  div.textContent = "Weekdays: 8AM - 8PM";
-  element.appendChild(div);
+  p = document.createElement("div");
+  p.textContent = "Hours";
+  p.classList.add("heading");
+  div.appendChild(p);
 
-  div = document.createElement("div");
-  div.textContent = "Weekends: 9AM - 9PM";
+  p = document.createElement("div");
+  p.textContent = "Weekdays: 8AM - 8PM";
+  div.appendChild(p);
+
+  p = document.createElement("div");
+  p.textContent = "Weekends: 9AM - 9PM";
+  div.appendChild(p);
+
   element.appendChild(div);
 
   // location
   div = document.createElement("div");
-  div.textContent = "Location";
-  element.appendChild(div);
+  div.classList.add("wood", "info", "align");
 
-  div = document.createElement("div");
-  div.textContent = "123 Wood Drive, Woodville, Foreston";
+  p = document.createElement("div");
+  p.textContent = "Location";
+  p.classList.add("heading");
+  div.appendChild(p);
+
+  p = document.createElement("div");
+  p.textContent = "123 Wood Drive, Woodville, Foreston";
+  div.appendChild(p);
+
   element.appendChild(div);
 
   return element;
@@ -66,4 +85,4 @@ const homePage = () => {
 /******/ var __webpack_exports__ = (__webpack_exec__("./src/homePage.js"));
 /******/ }
 ]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaG9tZVBhZ2UuYnVuZGxlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTs7QUFFQSxpRUFBZSxRQUFRLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZXN0YXVyYW50LXBhZ2UvLi9zcmMvaG9tZVBhZ2UuanMiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgaG9tZVBhZ2UgPSAoKSA9PiB7XG4gIGNvbnN0IGVsZW1lbnQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpO1xuXG4gIC8vIHNob3AgdGl0bGVcbiAgbGV0IGRpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIGRpdi50ZXh0Q29udGVudCA9IFwiVGhlIENhYmluXCI7XG4gIGRpdi5jbGFzc0xpc3QuYWRkKFwiY2VudGVyXCIpO1xuICBlbGVtZW50LmFwcGVuZENoaWxkKGRpdik7XG5cbiAgLy8gY3VzdG9tZXIgcmV2aWV3XG4gIGRpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIGRpdi50ZXh0Q29udGVudCA9XG4gICAgXCJUaGUgQ2FiaW4gaGFzIHRoZSBoaWdoZXN0IHF1YWxpdHkgdHJlZSBzYXBsaW5ncyEgVGhlIENhYmluJ3MgdHJlZSBpbnN0YWxsYXRpb24gc2VydmljZSB3YXMgZmFzdCBhbmQgZWFzeSFcIjtcbiAgZWxlbWVudC5hcHBlbmRDaGlsZChkaXYpO1xuXG4gIGRpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIGRpdi50ZXh0Q29udGVudCA9IFwiVG9tXCI7XG4gIGVsZW1lbnQuYXBwZW5kQ2hpbGQoZGl2KTtcblxuICAvLyBob3Vyc1xuICBkaXYgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpO1xuICBkaXYudGV4dENvbnRlbnQgPSBcIkhvdXJzXCI7XG4gIGVsZW1lbnQuYXBwZW5kQ2hpbGQoZGl2KTtcblxuICBkaXYgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpO1xuICBkaXYudGV4dENvbnRlbnQgPSBcIldlZWtkYXlzOiA4QU0gLSA4UE1cIjtcbiAgZWxlbWVudC5hcHBlbmRDaGlsZChkaXYpO1xuXG4gIGRpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIGRpdi50ZXh0Q29udGVudCA9IFwiV2Vla2VuZHM6IDlBTSAtIDlQTVwiO1xuICBlbGVtZW50LmFwcGVuZENoaWxkKGRpdik7XG5cbiAgLy8gbG9jYXRpb25cbiAgZGl2ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbiAgZGl2LnRleHRDb250ZW50ID0gXCJMb2NhdGlvblwiO1xuICBlbGVtZW50LmFwcGVuZENoaWxkKGRpdik7XG5cbiAgZGl2ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbiAgZGl2LnRleHRDb250ZW50ID0gXCIxMjMgV29vZCBEcml2ZSwgV29vZHZpbGxlLCBGb3Jlc3RvblwiO1xuICBlbGVtZW50LmFwcGVuZENoaWxkKGRpdik7XG5cbiAgcmV0dXJuIGVsZW1lbnQ7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBob21lUGFnZTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaG9tZVBhZ2UuYnVuZGxlLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7QUFFQTs7QUFFQTtBQUNBOztBQUVBLGlFQUFlLFFBQVEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3Jlc3RhdXJhbnQtcGFnZS8uL3NyYy9ob21lUGFnZS5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBob21lUGFnZSA9ICgpID0+IHtcbiAgY29uc3QgZWxlbWVudCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIGVsZW1lbnQuY2xhc3NMaXN0LmFkZChcImFsaWduXCIpO1xuXG4gIC8vIHNob3AgdGl0bGVcbiAgbGV0IGRpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIGRpdi50ZXh0Q29udGVudCA9IFwiVGhlIENhYmluXCI7XG4gIGRpdi5jbGFzc0xpc3QuYWRkKFwid29vZFwiLCBcInRpdGxlXCIpO1xuICBlbGVtZW50LmFwcGVuZENoaWxkKGRpdik7XG5cbiAgLy8gY3VzdG9tZXIgcmV2aWV3XG4gIGRpdiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIGRpdi5jbGFzc0xpc3QuYWRkKFwid29vZFwiLCBcImluZm9cIiwgXCJhbGlnblwiKTtcblxuICBsZXQgcCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIHAudGV4dENvbnRlbnQgPVxuICAgIFwiVGhlIENhYmluIGhhcyB0aGUgaGlnaGVzdCBxdWFsaXR5IHRyZWUgc2FwbGluZ3MhIFRoZSBDYWJpbidzIHRyZWUgaW5zdGFsbGF0aW9uIHNlcnZpY2Ugd2FzIGZhc3QgYW5kIGVhc3khIFRoZSBzdGFmZiBwcm92aWRlZCBhbWF6aW5nIGN1c3RvbWVyIHNlcnZpY2UuIFRoZXkgd2VyZSB3aWxsaW5nIHRvIGFuc3dlciBhbnkgcXVlc3Rpb25zIG9yIGNvbmNlcm5zIHRoYXQgSSBoYWQuXCI7XG4gIGRpdi5hcHBlbmRDaGlsZChwKTtcblxuICBwID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbiAgcC50ZXh0Q29udGVudCA9IFwiTWFuZGVsb3JpYW5cIjtcbiAgcC5jbGFzc0xpc3QuYWRkKFwiaGVhZGluZ1wiKTtcbiAgZGl2LmFwcGVuZENoaWxkKHApO1xuXG4gIGVsZW1lbnQuYXBwZW5kQ2hpbGQoZGl2KTtcblxuICAvLyBob3Vyc1xuICBkaXYgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpO1xuICBkaXYuY2xhc3NMaXN0LmFkZChcIndvb2RcIiwgXCJpbmZvXCIsIFwiYWxpZ25cIik7XG5cbiAgcCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIHAudGV4dENvbnRlbnQgPSBcIkhvdXJzXCI7XG4gIHAuY2xhc3NMaXN0LmFkZChcImhlYWRpbmdcIik7XG4gIGRpdi5hcHBlbmRDaGlsZChwKTtcblxuICBwID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbiAgcC50ZXh0Q29udGVudCA9IFwiV2Vla2RheXM6IDhBTSAtIDhQTVwiO1xuICBkaXYuYXBwZW5kQ2hpbGQocCk7XG5cbiAgcCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIHAudGV4dENvbnRlbnQgPSBcIldlZWtlbmRzOiA5QU0gLSA5UE1cIjtcbiAgZGl2LmFwcGVuZENoaWxkKHApO1xuXG4gIGVsZW1lbnQuYXBwZW5kQ2hpbGQoZGl2KTtcblxuICAvLyBsb2NhdGlvblxuICBkaXYgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KFwiZGl2XCIpO1xuICBkaXYuY2xhc3NMaXN0LmFkZChcIndvb2RcIiwgXCJpbmZvXCIsIFwiYWxpZ25cIik7XG5cbiAgcCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJkaXZcIik7XG4gIHAudGV4dENvbnRlbnQgPSBcIkxvY2F0aW9uXCI7XG4gIHAuY2xhc3NMaXN0LmFkZChcImhlYWRpbmdcIik7XG4gIGRpdi5hcHBlbmRDaGlsZChwKTtcblxuICBwID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImRpdlwiKTtcbiAgcC50ZXh0Q29udGVudCA9IFwiMTIzIFdvb2QgRHJpdmUsIFdvb2R2aWxsZSwgRm9yZXN0b25cIjtcbiAgZGl2LmFwcGVuZENoaWxkKHApO1xuXG4gIGVsZW1lbnQuYXBwZW5kQ2hpbGQoZGl2KTtcblxuICByZXR1cm4gZWxlbWVudDtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IGhvbWVQYWdlO1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9
