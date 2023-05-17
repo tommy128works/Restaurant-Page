@@ -1,47 +1,61 @@
 const homePage = () => {
   const element = document.createElement("div");
+  element.classList.add("align");
 
   // shop title
   let div = document.createElement("div");
   div.textContent = "The Cabin";
-  div.classList.add("center", "wood");
+  div.classList.add("wood", "title");
   element.appendChild(div);
 
   // customer review
   div = document.createElement("div");
-  div.textContent =
-    "The Cabin has the highest quality tree saplings! The Cabin's tree installation service was fast and easy!";
-  div.classList.add("center");
-  element.appendChild(div);
+  div.classList.add("wood", "info", "align");
 
-  div = document.createElement("div");
-  div.textContent = "Tom";
-  div.classList.add("left");
+  let p = document.createElement("div");
+  p.textContent =
+  "The Cabin has the highest quality tree saplings! The Cabin's tree installation service was fast and easy! The staff provided amazing customer service. They were willing to answer any questions or concerns that I had.";
+  div.appendChild(p);
+
+  p = document.createElement("div");
+  p.textContent = "Mandelorian";
+  p.classList.add("heading");
+  div.appendChild(p);
+
   element.appendChild(div);
 
   // hours
   div = document.createElement("div");
-  div.textContent = "Hours";
-  element.appendChild(div);
+  div.classList.add("wood", "info", "align");
+  
+  p = document.createElement("div");
+  p.textContent = "Hours";
+  p.classList.add("heading");
+  div.appendChild(p);
 
-  div = document.createElement("div");
-  div.textContent = "Weekdays: 8AM - 8PM";
-  div.classList.add("center");
-  element.appendChild(div);
+  p = document.createElement("div");
+  p.textContent = "Weekdays: 8AM - 8PM";
+  div.appendChild(p);
 
-  div = document.createElement("div");
-  div.textContent = "Weekends: 9AM - 9PM";
-  div.classList.add("center");
+  p = document.createElement("div");
+  p.textContent = "Weekends: 9AM - 9PM";
+  div.appendChild(p);
+
   element.appendChild(div);
 
   // location
   div = document.createElement("div");
-  div.textContent = "Location";
-  element.appendChild(div);
+  div.classList.add("wood", "info", "align");
 
-  div = document.createElement("div");
-  div.textContent = "123 Wood Drive, Woodville, Foreston";
-  div.classList.add("center");
+  p = document.createElement("div");
+  p.textContent = "Location";
+  p.classList.add("heading");
+  div.appendChild(p);
+
+  p = document.createElement("div");
+  p.textContent = "123 Wood Drive, Woodville, Foreston";
+  div.appendChild(p);
+
   element.appendChild(div);
 
   return element;
