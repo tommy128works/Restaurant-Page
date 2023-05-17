@@ -15,6 +15,7 @@ document.body.appendChild(element);
 
 const content = document.getElementById("content");
 // content.appendChild(homePage());
-content.appendChild(shopPage());
+// content.appendChild(shopPage());
+content.appendChild(contactPage());
 
 console.log("Hello world!");
